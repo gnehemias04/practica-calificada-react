@@ -8,7 +8,7 @@ const people = [
   {
     name: "Saba Cabrera",
     rol: "ART DIRECTOR",
-    img: "../images/photo2.png",
+    img: "./images/photo2.png",
     id: 1,
   },
   { name: "Shae Le", rol: "TEACH LEAD", img: "./images/photo3.png", id: 2 },
