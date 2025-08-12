@@ -1,5 +1,28 @@
 import { Card } from "./components/Card";
 import { DarckMode } from "./Darck";
+const people = [
+  {
+    name: "Bill Mahoney",
+    rol: "PRODUCT OWNER",
+    img: "/images/photo1.png",
+    id: 0,
+  },
+  {
+    name: "Saba Cabrera",
+    rol: "ART DIRECTOR",
+    img: "/images/photo2.png",
+    id: 1,
+  },
+  { name: "Shae Le", rol: "TEACH LEAD", img: "/images/photo3.png", id: 2 },
+  { name: "Skylah Lu", rol: "UX DESIGNER", img: "/images/photo4.png", id: 3 },
+  {
+    name: "Griff Ricchards",
+    rol: "DEVELOPER",
+    img: "/images/photo5.png",
+    id: 4,
+  },
+  { name: "Stan John", rol: "DEVELOPER", img: "/images/photo6.png", id: 5 },
+];
 
 function App() {
   return (
@@ -18,7 +41,7 @@ function App() {
         </div>
       </div>
       <div className="w-full h-full flex justify-center items-center">
-        <Card />
+        <Card people={people} />
       </div>
     </>
   );

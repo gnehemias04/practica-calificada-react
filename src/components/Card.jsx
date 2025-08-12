@@ -1,28 +1,4 @@
-const people = [
-  {
-    name: "Bill Mahoney",
-    rol: "PRODUCT OWNER",
-    img: "/images/photo1.png",
-    id: 0,
-  },
-  {
-    name: "Saba Cabrera",
-    rol: "ART DIRECTOR",
-    img: "/images/photo2.png",
-    id: 1,
-  },
-  { name: "Shae Le", rol: "TEACH LEAD", img: "/images/photo3.png", id: 2 },
-  { name: "Skylah Lu", rol: "UX DESIGNER", img: "/images/photo4.png", id: 3 },
-  {
-    name: "Griff Ricchards",
-    rol: "DEVELOPER",
-    img: "/images/photo5.png",
-    id: 4,
-  },
-  { name: "Stan John", rol: "DEVELOPER", img: "/images/photo6.png", id: 5 },
-];
-
-export function Card() {
+export function Card({ people }) {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-3 w-full h-full  p-4 lg:p-16 gap-4">
       {people.map((e) => {
